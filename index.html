@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnippetKit — Generate & Download Beautiful Code Templates</title>
+  <meta name="description"
+    content="SnippetKit lets you generate, customize, and download clean code templates with syntax highlighting, themes, languages and font controls." />
+  <meta name="author" content="SnippetKit" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SnippetKit" />
+  <meta property="og:description"
+    content="Generate and download beautiful, customizable code snippets and templates." />
+  <meta property="og:site_name" content="SnippetKit" />
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/style.css" />
+
+  <link rel="shortcut icon" href="/assets/favicon/android-chrome-512x512.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon/android-chrome-192x192.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon/apple-touch-icon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon-32x32.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" defer></script>
+  <script>
+    (function () {
+      const path = 'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/';
+      function trySet() {
+        if (window.Prism && Prism.plugins && Prism.plugins.autoloader) {
+          Prism.plugins.autoloader.languages_path = path;
+          clearInterval(timer);
+        }
+      }
+      trySet();
+      const timer = setInterval(trySet, 50);
+      setTimeout(() => clearInterval(timer), 2000);
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="app-wrapper">
+    <!-- Code Panel Section -->
+    <section class="panel-section">
+      <div class="panel-screen" id="panel-to-export">
+        <div class="code-panel">
+          <div class="code-panel-header">
+            <div class="lights">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <input type="text" class="template-name" value="Untitled" />
+          </div>
+
+          <pre class="the-code"><code
+              class="language-kotlin"
+              contenteditable="true"
+              spellcheck="false"
+              autocorrect="off"
+              autocapitalize="off"
+              aria-label="Code editor"
+            ></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- doc section -->
+    <section class="doc-section">
+      <div class="doc-section-content">
+        <div class="doc-sec-selectors">
+          <!-- Theme Selector  -->
+          <div class="select-group">
+            <label class="the-label">Theme</label>
+            <div class="custom-select" data-name="themes" id="custom-themes" tabindex="0" aria-haspopup="listbox"
+              role="combobox" aria-expanded="false">
+              <button class="select-trigger" type="button" aria-expanded="false">
+                <span class="trigger-value">Select Theme</span>
+                <span class="trigger-arrow">▾</span>
+              </button>
+              <ul class="select-options" role="listbox"></ul>
+            </div>
+          </div>
+
+          <!-- Languages Selector  -->
+          <div class="select-group">
+            <label class="the-label">Language</label>
+            <div class="custom-select" data-name="languages" id="custom-languages" tabindex="0" aria-haspopup="listbox"
+              role="combobox" aria-expanded="false">
+              <button class="select-trigger" type="button" aria-expanded="false">
+                <span class="trigger-value">Select Language</span>
+                <span class="trigger-arrow">▾</span>
+              </button>
+              <ul class="select-options" role="listbox"></ul>
+            </div>
+          </div>
+
+          <!-- Fonts Selector -->
+          <div class="select-group">
+            <label class="the-label">Font</label>
+            <div class="custom-select" data-name="fonts" id="custom-fonts" tabindex="0" aria-haspopup="listbox"
+              role="combobox" aria-expanded="false">
+              <button class="select-trigger" type="button" aria-expanded="false">
+                <span class="trigger-value">Select Font</span>
+                <span class="trigger-arrow">▾</span>
+              </button>
+              <ul class="select-options" role="listbox"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-sec-ranges">
+          <!-- Font Size -->
+          <div class="fontSize-wrapper">
+            <label for="the-font-size" class="the-label">Font Size</label>
+            <input type="number" max="100" min="0" value="16" id="the-font-size" />
+          </div>
+
+          <!-- Padding + border radius -->
+          <div class="padding-Bradius">
+            <div class="radius-range-wrapper">
+              <label for="borderRadius" class="the-label p-label">border radius</label>
+              <input type="range" min="0" max="100" value="0" id="borderRadius"
+                class="custom-range custom-range-radius" />
+            </div>
+            <div class="padding-range-wrapper">
+              <label for="padding" class="the-label">Padding</label>
+              <input type="range" min="0" max="100" value="50" id="padding" class="custom-range" />
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-sec-toggles">
+          <!-- Background Toggle -->
+          <div class="background-toggle-wrapper">
+            <label for="background-toggle" class="the-label">Background</label>
+            <label class="switch-background">
+              <input type="checkbox" id="background-toggle" />
+              <span class="slider-background"></span>
+            </label>
+          </div>
+
+          <!-- Dark/Light Mode Toggle -->
+          <div class="mode-toggle-wrapper">
+            <label for="mode-toggle" class="the-label">Dark/Light</label>
+            <label class="switch-background">
+              <input type="checkbox" id="mode-toggle" />
+              <span class="slider-background"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="divider2"></div>
+
+        <!-- Export Section -->
+        <div class="export-wrapper">
+          <ul class="export-options">
+            <li>
+              <button id="copy" type="button" aria-label="Copy image">
+                <svg viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.93334 6.47005C1.93334 3.96453 3.96446 1.93341 6.46998 1.93341H17.5299C20.0354 1.93341 22.0665 3.96453 22.0665 6.47005V8.31337V17.53C22.0665 20.0355 20.0354 22.0666 17.5299 22.0666L8.3133 22.0666L6.46997 22.0666C3.96446 22.0666 1.93334 20.0355 1.93334 17.53V12.0198C1.93303 12.0067 1.93303 11.9935 1.93334 11.9804V6.47005ZM20.3665 6.47005V7.48245C15.4573 7.70571 12.2527 9.86213 10.2708 12.5638C7.97192 10.7456 5.3558 10.6106 3.63334 10.9059V6.47005C3.63334 4.90342 4.90334 3.63341 6.46998 3.63341H17.5299C19.0965 3.63341 20.3665 4.90342 20.3665 6.47005ZM3.63334 17.53V12.636C4.97128 12.3342 7.33257 12.3323 9.35002 14.0066C8.14528 16.1862 7.61609 18.5212 7.49255 20.3666H6.46997C4.90334 20.3666 3.63334 19.0966 3.63334 17.53ZM11.1527 14.2924C9.88823 16.3243 9.33147 18.5993 9.19679 20.3666H17.5299C19.0965 20.3666 20.3665 19.0966 20.3665 17.53V9.18438C15.5975 9.42387 12.7791 11.679 11.1527 14.2924ZM7.85247 8.31337C8.616 8.31337 9.23496 7.69441 9.23496 6.93088C9.23496 6.16735 8.616 5.54839 7.85247 5.54839C7.08894 5.54839 6.46998 6.16735 6.46998 6.93088C6.46998 7.69441 7.08894 8.31337 7.85247 8.31337Z">
+                    </path>
+                  </g>
+                </svg>
+                Copy Image
+              </button>
+            </li>
+
+            <li>
+              <button id="copy-link" type="button" aria-label="Copy link">
+                <svg viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.93334 6.47005C1.93334 3.96453 3.96446 1.93341 6.46998 1.93341H17.5299C20.0354 1.93341 22.0665 3.96453 22.0665 6.47005V8.31337V17.53C22.0665 20.0355 20.0354 22.0666 17.5299 22.0666L8.3133 22.0666L6.46997 22.0666C3.96446 22.0666 1.93334 20.0355 1.93334 17.53V12.0198C1.93303 12.0067 1.93303 11.9935 1.93334 11.9804V6.47005ZM20.3665 6.47005V7.48245C15.4573 7.70571 12.2527 9.86213 10.2708 12.5638C7.97192 10.7456 5.3558 10.6106 3.63334 10.9059V6.47005C3.63334 4.90342 4.90334 3.63341 6.46998 3.63341H17.5299C19.0965 3.63341 20.3665 4.90342 20.3665 6.47005ZM3.63334 17.53V12.636C4.97128 12.3342 7.33257 12.3323 9.35002 14.0066C8.14528 16.1862 7.61609 18.5212 7.49255 20.3666H6.46997C4.90334 20.3666 3.63334 19.0966 3.63334 17.53ZM11.1527 14.2924C9.88823 16.3243 9.33147 18.5993 9.19679 20.3666H17.5299C19.0965 20.3666 20.3665 19.0966 20.3665 17.53V9.18438C15.5975 9.42387 12.7791 11.679 11.1527 14.2924ZM7.85247 8.31337C8.616 8.31337 9.23496 7.69441 9.23496 6.93088C9.23496 6.16735 8.616 5.54839 7.85247 5.54839C7.08894 5.54839 6.46998 6.16735 6.46998 6.93088C6.46998 7.69441 7.08894 8.31337 7.85247 8.31337Z">
+                    </path>
+                  </g>
+                </svg>
+                <span>Copy its Link</span>
+              </button>
+            </li>
+
+            <li class="divider" aria-hidden="true"><span class="divider"></span></li>
+
+            <li>
+              <button id="download-as-png" type="button" aria-label="Save as PNG">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M12 5H7C5.89543 5 5 5.89543 5 7V16H19V12.5" stroke="#000000" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 16H21V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V16Z" stroke="#000000"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.5 3V9M18.5 9L16 6.5M18.5 9L21 6.5" stroke="#000000" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                Save as PNG
+              </button>
+            </li>
+
+            <li>
+              <button id="download-as-svg" type="button" aria-label="Save as SVG">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M12 5H7C5.89543 5 5 5.89543 5 7V16H19V12.5" stroke="#000000" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 16H21V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V16Z" stroke="#000000"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.5 3V9M18.5 9L16 6.5M18.5 9L21 6.5" stroke="#000000" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                Save as SVG
+              </button>
+            </li>
+          </ul>
+          <button class="export-btn" type="button" aria-label="Export">
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 227.216 227.216" xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317 c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879 C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258 c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865 c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865 c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15 c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879 C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866 c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216 c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875 C203.759,199.715,191.26,212.216,175.897,212.216z">
+                </path>
+              </g>
+            </svg>
+            <span id="ui"> Export</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--(the alert popup's) -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="icon" id="toastIcon">✓</div>
+    <div class="msg" id="toastMsg">Copied</div>
+  </div>
+
+  <script src="https://unpkg.com/dom-to-image-more/dist/dom-to-image-more.min.js"></script>
+  <script src="/script.js" defer></script>
+  <script src="/export.js" defer></script>
+</body>
+
+</html>

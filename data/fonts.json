@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fira-code",
+    "name": "Fira Code",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "jetbrains-mono",
+    "name": "JetBrains Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "source-code-pro",
+    "name": "Source Code Pro",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "ibm-plex-mono",
+    "name": "IBM Plex Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "ubuntu-mono",
+    "name": "Ubuntu Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "roboto-mono",
+    "name": "Roboto Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "inconsolata",
+    "name": "Inconsolata",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "space-mono",
+    "name": "Space Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "anonymous-pro",
+    "name": "Anonymous Pro",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "cousine",
+    "name": "Cousine",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "red-hat-mono",
+    "name": "Red Hat Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "literata-mono",
+    "name": "Literata",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "fragment-mono",
+    "name": "Fragment Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "pt-mono",
+    "name": "PT Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "share-tech-mono",
+    "name": "Share Tech Mono",
+    "fallback": "monospace",
+    "weights": [400]
+  },
+  {
+    "id": "lekton",
+    "name": "Lekton",
+    "fallback": "monospace",
+    "weights": [400]
+  }
+]

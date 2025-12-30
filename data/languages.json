@@ -1,0 +1,159 @@
+[
+  {
+    "id": "kotlin",
+    "label": "Kotlin",
+    "prismClass": "language-kotlin",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+  },
+  {
+    "id": "javascript",
+    "label": "JavaScript",
+    "prismClass": "language-javascript",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "prismClass": "language-typescript",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+  },
+  {
+    "id": "bash",
+    "label": "Bash",
+    "prismClass": "language-bash",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+  },
+  {
+    "id": "c",
+    "label": "C",
+    "prismClass": "language-c",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+  },
+  {
+    "id": "cpp",
+    "label": "C++",
+    "prismClass": "language-cpp",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+  },
+  {
+    "id": "csharp",
+    "label": "C#",
+    "prismClass": "language-csharp",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+  },
+  {
+    "id": "css",
+    "label": "CSS",
+    "prismClass": "language-css",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    "id": "docker",
+    "label": "Docker",
+    "prismClass": "language-docker",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  },
+  {
+    "id": "go",
+    "label": "Go",
+    "prismClass": "language-go",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+  },
+  {
+    "id": "html",
+    "label": "HTML",
+    "prismClass": "language-html",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "id": "java",
+    "label": "Java",
+    "prismClass": "language-java",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
+  {
+    "id": "json",
+    "label": "JSON",
+    "prismClass": "language-json",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg"
+  },
+
+  {
+    "id": "lua",
+    "label": "Lua",
+    "prismClass": "language-lua",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
+  },
+  {
+    "id": "markdown",
+    "label": "Markdown",
+    "prismClass": "language-markdown",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
+  },
+  {
+    "id": "php",
+    "label": "PHP",
+    "prismClass": "language-php",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "prismClass": "language-python",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  {
+    "id": "ruby",
+    "label": "Ruby",
+    "prismClass": "language-ruby",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
+  },
+  {
+    "id": "rust",
+    "label": "Rust",
+    "prismClass": "language-rust",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg"
+  },
+  {
+    "id": "scala",
+    "label": "Scala",
+    "prismClass": "language-scala",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg"
+  },
+  {
+    "id": "scss",
+    "label": "SCSS",
+    "prismClass": "language-scss",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+  },
+  {
+    "id": "sql",
+    "label": "SQL",
+    "prismClass": "language-sql",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    "id": "swift",
+    "label": "Swift",
+    "prismClass": "language-swift",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+  },
+  {
+    "id": "yaml",
+    "label": "YAML",
+    "prismClass": "language-yaml",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yaml/yaml-original.svg"
+  },
+  {
+    "id": "xml",
+    "label": "XML",
+    "prismClass": "language-xml",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xml/xml-original.svg"
+  },
+  {
+    "id": "plaintext",
+    "label": "Plain Text",
+    "prismClass": "language-none",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/file/file-original.svg"
+  }
+]

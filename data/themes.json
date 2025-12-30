@@ -1,0 +1,117 @@
+[
+  {
+    "id": "night-fade",
+    "label": "Night Fade",
+    "gradient": "linear-gradient(to right, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)",
+    "icon": "/assets/theme-pngs/001 Night Fade.png"
+  },
+  {
+    "id": "warm-flame",
+    "label": "Warm Flame",
+    "gradient": "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+    "icon": "/assets/theme-pngs/002 Warm Flame.png"
+  },
+  {
+    "id": "juicy-peach",
+    "label": "Juicy Peach",
+    "gradient": "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+    "icon": "/assets/theme-pngs/003 Juicy Peach.png"
+  },
+  {
+    "id": "young-passion",
+    "label": "Young Passion",
+    "gradient": "linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)",
+    "icon": "/assets/theme-pngs/004 Young Passion.png"
+  },
+  {
+    "id": "sunny-morning",
+    "label": "Sunny Morning",
+    "gradient": "linear-gradient(120deg, #f6d365 0%, #fda085 100%)",
+    "icon": "/assets/theme-pngs/005 Sunny Morning.png"
+  },
+  {
+    "id": "dusty-grass",
+    "label": "Dusty Grass",
+    "gradient": "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)",
+    "icon": "/assets/theme-pngs/006 Dusty Grass.png"
+  },
+  {
+    "id": "tempt-azure",
+    "label": "Tempt Azure",
+    "gradient": "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)",
+    "icon": "/assets/theme-pngs/007 Tempting Azure.png"
+  },
+  {
+    "id": "amy-crisp",
+    "label": "Amy Crisp",
+    "gradient": "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)",
+    "icon": "/assets/theme-pngs/008 Amy Crisp.png"
+  },
+  {
+    "id": "ripe-malinka",
+    "label": "Ripe Malinka",
+    "gradient": "linear-gradient(120deg, #f093fb 0%, #f5576c 100%)",
+    "icon": "/assets/theme-pngs/009 Ripe Malinka.png"
+  },
+  {
+    "id": "malibu-beach",
+    "label": "Malibu Beach",
+    "gradient": "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)",
+    "icon": "/assets/theme-pngs/010 Malibu Beach.png"
+  },
+  {
+    "id": "cloudy-knox",
+    "label": "Cloudy Knox",
+    "gradient": "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
+    "icon": "/assets/theme-pngs/011 Cloudy Knoxville.png"
+  },
+  {
+    "id": "true-sunset",
+    "label": "True Sunset",
+    "gradient": "linear-gradient(to right, #fa709a 0%, #fee140 100%)",
+    "icon": "/assets/theme-pngs/012 True Sunset.png"
+  },
+  {
+    "id": "new-life",
+    "label": "New Life",
+    "gradient": "linear-gradient(to right, #43e97b 0%, #38f9d7 100%)",
+    "icon": "/assets/theme-pngs/013 New Life.png"
+  },
+  {
+    "id": "wild-apple",
+    "label": "Wild Apple",
+    "gradient": "linear-gradient(to top, #d299c2 0%, #fef9d7 100%)",
+    "icon": "/assets/theme-pngs/014 Wild Apple.png"
+  },
+  {
+    "id": "near-moon",
+    "label": "Near Moon",
+    "gradient": "linear-gradient(to top, #5ee7df 0%, #b490ca 100%)",
+    "icon": "/assets/theme-pngs/015 Near Moon.png"
+  },
+  {
+    "id": "plum-plate",
+    "label": "Plum Plate",
+    "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "icon": "/assets/theme-pngs/016 Plum Plate.png"
+  },
+
+  {
+    "id": "ocean-breeze",
+    "label": "Ocean Breeze",
+    "gradient": "linear-gradient(to bottom right, #00c6ff, #0072ff)",
+    "icon": null
+  },
+  {
+    "id": "purple-haze",
+    "label": "Purple Haze",
+    "gradient": "linear-gradient(to bottom right, #8e2de2, #4a00e0)",
+    "icon": null
+  },
+  {
+    "id": "midnight-spectrum",
+    "label": "Midnight Spectrum",
+    "gradient": "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)",
+    "icon": null
+  }
+]
