@@ -41,13 +41,6 @@ snippitKit is a lightweight web tool for producing polished code screenshots and
 ✔️ Accessible UI: ARIA + keyboard nav
 </p>
 
-## Installation
-
-- [<b>GitHub</b>](https://github.com/byllzz/snippitkit) - Clone the repository to get the project files.
-- [<b>VSCode / Any Code Editor</b>](https://code.visualstudio.com/) - To open and edit the code.
-- [<b>Live Server</b>](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Optional, to view your changes live in the browser.
-- [<b>Browser</b>](https://www.google.com/chrome/) - Open <code>index.html</code> to run the app.
-
 ## Usage
 
 - Open the app in your browser.
